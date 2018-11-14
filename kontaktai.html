@@ -19,8 +19,40 @@
                 Kontaktai
             </h1>
         </header>
-        <p>
-        </p>
+
+        <form action="saugoti.php" method="post" target="_blank">
+            <label for="vardas">Jusu vardas</label>
+            <input type="text" name="firstName" id="vardas"/><br>
+            <br>
+            <label for="pavarde">Jusu pavarde</label>
+            <input type="text" name="lastName" id="pavarde"/><br>
+
+            <input type="radio" name="gender" value="vyras">Vyras<br>
+            <input type="radio" name="gender" value="moteris">Moteris<br>
+            <label for="auto">Automobilis</label>
+            <select name="car" id="auto">
+                <option>Pasirinkite automobili</option>
+                <option value="mercedes">Mercedes-Benz</option>
+                <option value="kita">Kita</option>
+            </select>
+            <hr>
+
+            <label for="ar">Esu ne robotas</label>
+            <input type="checkbox" value="taip" id="ar" required/>
+            <hr>
+
+            <label for="pa">Pasirinkimas A</label>
+            <input type="radio" name="pasirinkimas" value="A" id="pa">
+            <hr>
+
+            <label for="pb">Pasirinkimas B</label>
+            <input type="radio" name="pasirinkimas" value="B" id="pb">
+            <hr>
+
+            <textarea name="klausimas" placeholder="Jusu tekstas">Labas pasauli?</textarea>
+
+            <button type="submit">Klausti</button>
+        </form>
     </div>
 </main>
 <footer>
