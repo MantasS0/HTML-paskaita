@@ -1,13 +1,10 @@
-body {
-    width: 1080px;
-    border: 1px solid darkgray;
-    background-color: #343434;
-    margin: auto;
-}
-header{
+header {
     background-color: #444444;
     color: #ffffff;
+    padding: 5px;
+    /*position: fixed;*/
 }
+
 h1 {
     color: #ffffff;
     size: 100px;
@@ -17,16 +14,34 @@ h1 {
     /*text-shadow: 3px 2px gray;*/
     font-weight: bold;
 }
-.content header{
+
+.content header {
     background-color: #6e6e6e;
 }
+
 main {
     background-color: #6e6e6e;
 }
-footer{
+p{
+    text-align: start;
+}
+footer {
+    display: flex;
+    align-items: flex-end;
     color: #b3b3b3;
     background-color: #444444;
+    font-size: 12px;
+    justify-content:space-between;
 }
-a{
+footer nav{
+    size: 8px;
+    padding: 10px 10px 3px;
+}
+footer span {
+    padding: 10px 10px 3px;
+}
+a {
+    text-decoration: none;
     color: #d1d1d1;
+    padding: 0 10px;
 }

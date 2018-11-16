@@ -1,0 +1,10 @@
+body{
+    background-color: #2c2c2c;
+}
+main{
+    width: 50%;
+    border: 1px solid #212121;
+    background-color: #343434;
+    margin: 0 auto;
+    font-family: Verdana, "BankGothic Md BT", sans-serif;
+}
