@@ -29,11 +29,8 @@ h1 {
     text-transform: uppercase;
     /*text-shadow: 3px 2px gray;*/
     font-weight: bold;
-    padding: 5px;
-}
-
-.content h1 {
-    padding-top: 35px;
+    padding: 40px 0 7px;
+    /*padding-top: 35px;*/
     background-color: #212121;
 }
 

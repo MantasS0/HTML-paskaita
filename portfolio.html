@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/dizainas.css">
+    <link rel="stylesheet" href="css/filtras.css">
     <!--<link rel="stylesheet" href="css/animacijos.css">-->
 </head>
 <body>
@@ -27,8 +28,25 @@
                 Portfolio
             </h1>
         </header>
-        <p>
-        </p>
+        <nav id="filtras">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('cSharp')"> C#</button>
+            <button class="btn" onclick="filterSelection('java')"> Java</button>
+            <button class="btn" onclick="filterSelection('web')"> Web</button>
+        </nav>
+        <div class="container">
+            <div class="filterDiv cSharp">
+                <img src="/img/c1.PNG" alt="C# pav. 1" height="270" width="300"/>
+                <img src="/img/c2.PNG" alt="C# pav. 2" height="270" width="300"/>
+            </div>
+            <div class="filterDiv java">
+                <img src="/img/java1.PNG" alt="JAVA pav. 1" height="270" width="300"/>
+                <img src="/img/java2.PNG" alt="JAVA pav. 2" height="270" width="300"/>
+            </div>
+            <div class="filterDiv web">
+                <img src="/img/web1.PNG" alt="WEB pav. 1" height="270" width="300"/>
+            </div>
+        </div>
     </div>
 </main>
 <footer>
