@@ -27,38 +27,56 @@
             </h1>
         </header>
 
+        <div id="googleMap"></div>
+
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(54.936517, 23.890972),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
         <form action="saugoti.php" method="post" target="_blank">
-            <label for="vardas">Jusu vardas</label>
-            <input type="text" name="firstName" id="vardas"/><br>
-            <br>
-            <label for="pavarde">Jusu pavarde</label>
-            <input type="text" name="lastName" id="pavarde"/><br>
 
-            <input type="radio" name="gender" value="vyras">Vyras<br>
-            <input type="radio" name="gender" value="moteris">Moteris<br>
-            <label for="auto">Automobilis</label>
-            <select name="car" id="auto">
-                <option>Pasirinkite automobili</option>
-                <option value="mercedes">Mercedes-Benz</option>
-                <option value="kita">Kita</option>
-            </select>
-            <hr>
+            <div class="empty"></div>
 
-            <label for="ar">Esu ne robotas</label>
-            <input type="checkbox" value="taip" id="ar" required/>
-            <hr>
+            <div id="v1">
+                <label for="vardas">Jusu vardas</label>
+            </div>
 
-            <label for="pa">Pasirinkimas A</label>
-            <input type="radio" name="pasirinkimas" value="A" id="pa">
-            <hr>
+            <div id="zin1">
+                <label for="klausimas">Žinutė</label>
+            </div>
 
-            <label for="pb">Pasirinkimas B</label>
-            <input type="radio" name="pasirinkimas" value="B" id="pb">
-            <hr>
+            <div class="empty2"></div>
 
-            <textarea name="klausimas" placeholder="Jusu tekstas">Labas pasauli?</textarea>
+            <div id="v2">
+                <input type="text" name="firstName" id="vardas"/>
+            </div>
 
-            <button type="submit">Klausti</button>
+            <div id="zin2">
+                <textarea name="textMessage" id="klausimas" placeholder="Jusu tekstas"></textarea>
+            </div>
+
+            <div id="elp1">
+                <label for="pastas">Jusu el. paštas</label>
+            </div>
+
+            <div id="elp2">
+                <input type="text" name="email" id="pastas"/>
+            </div>
+
+
+
+
+
+
+            <button type="submit">Siųsti</button>
         </form>
     </div>
 </main>

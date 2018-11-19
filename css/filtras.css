@@ -1,5 +1,16 @@
 .container {
     overflow: hidden;
+    display: flex;
+    align-content: space-evenly;
+}
+
+#filtras button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filterDiv img {
+    padding: 5px;
 }
 
 .filterDiv {
@@ -10,8 +21,7 @@
     /*line-height: 100px;*/
     /*text-align: center;*/
     margin: 2px;
-    padding: 5px+;
-    display: none; /* Hidden by default */
+    /*display: none; !* Hidden by default *!*/
 }
 
 /* The "show" class is added to the filtered elements */
