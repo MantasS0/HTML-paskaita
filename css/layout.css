@@ -4,7 +4,8 @@ body{
 main{
     width: 50%;
     border: 1px solid #212121;
-    background-color: #343434;
-    margin: 0 auto;
+    margin: auto;
     font-family: Verdana, "BankGothic Md BT", sans-serif;
+    padding-top: 35px;
+    background-color: #7b7b7b;
 }
