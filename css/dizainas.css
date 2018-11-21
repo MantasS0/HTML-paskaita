@@ -38,6 +38,9 @@ p{
     text-align: justify;
     margin: 5px;
 }
+#p2 {
+    text-align: center;
+}
 
 #googleMap{
     width: 100%;
@@ -106,14 +109,27 @@ form textarea{
     height: 100%;
 }
 
+#x1 {
+    height: 24px;
+    width: 50px;
+}
+
 footer {
+    height: 24px;
     border-top: 1px solid #010101;
     display: flex;
+    position: relative;
+    /*overflow: auto;*/
+    width: 100%;
+    /*float: bottom;*/
+    /*bottom: 0;*/
     align-items: flex-end;
     color: #b3b3b3;
     background-color: #222222;
     font-size: 12px;
     justify-content:space-between;
+    margin-top: -24px;
+    /*margin-bottom: 0;*/
 }
 footer nav{
     size: 8px;
