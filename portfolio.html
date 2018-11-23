@@ -50,15 +50,28 @@
         <button id="button12" onclick="pakeisti()">Paspausti</button>
         <div id="elementas">
             testas
-        <div>kitas</div>
+            <div>kitas</div>
             <img id="foto">
         </div>
 
         <button id="light-on-off" onclick="jungtiIsjungti()">ON/OFF</button>
         <div class="lightbulb">
+
             <img id="light-off">
-            <!--<img id="light-on" <style>display = hidden</style>>-->
+
+
+            <img id="light-on" style="display: none">
+
+
         </div>
+        <img id="lemp2" src="/img/lamp-off.png" onclick="lempute()">
+
+        <div class = "item1">
+            <img src="/img/lamp-off.png"
+                 class = "lempute false"
+            >
+        </div>
+        <div class="pagination"><<1/2/3>></div>
 
     </div>
 </main>
@@ -74,7 +87,9 @@
         <a href="kontaktai.html">Kontaktai</a>
     </nav>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/pavyzdys2.js"></script>
+    <script src="JS/jQuerry.js"></script>
 
 </footer>
 </body>

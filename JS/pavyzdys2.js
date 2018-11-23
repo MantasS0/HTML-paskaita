@@ -18,23 +18,50 @@ while (x<255){
     el.fontSize = x + "px";
 }
 
+//mano variantas
 let lightOff = document.getElementById("light-off");
 let lightOn = document.getElementById("light-on");
 lightOff.src = "/img/lamp-off.png";
 lightOn.src = "/img/lamp-on.png";
-// lightOn.replace
 
-// var lonh = lightOn.display = "hidden";
-// var lons = lightOn.display = "show";
-// var loffh = lightOff.display = "hidden";
-// var loffs = lightOff.display = "show";
-//
-//
-//
-// function jungtiIsjungti() {
-//
-//     if (loffs == "hidden"){
-//
-//     }
-//
-// }
+
+var lonh = lightOn.style.display = 'none';
+var lons = lightOn.style.display = 'contents';
+var loffh = lightOff.style.display = 'none';
+var loffs = lightOff.style.display = 'contents';
+
+
+function setImageVisible(id) {
+    var img = document.getElementById(id);
+    img.style.display = 'contents';
+}
+function setImageHidden(id) {
+    var img = document.getElementById(id);
+    img.style.display = 'none';
+}
+
+function jungtiIsjungti() {
+    if (lonh = true){
+        setImageVisible("light-off");
+        setImageHidden("light-on")
+    } else {
+        setImageVisible("light-on");
+        setImageHidden("light-off")
+    }
+
+}
+//veikia blogai (bandyt pagal destytojo tik su mygtuku
+
+//destytojo varinatas
+var state = false;
+function lempute() {
+    if (state){
+        document.getElementById('lemp2').src = "/img/lamp-off.png";
+    } else {
+        document.getElementById('lemp2').src = "/img/lamp-on.png";
+    }
+    state = !state;
+}
+
+//jQuerry
+
