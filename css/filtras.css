@@ -1,18 +1,23 @@
-.container *{
+.container:last-child {
     /*overflow: hidden;*/
     /*display: flex;*/
-    align-content: space-evenly;
+    /*align-content: space-evenly;*/
+    /*justify-content: space-evenly;*/
     /*margin: 20px 5px 5px;*/
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto;
-    /*height: 200px;*/
-    /*width: 100%;*/
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-auto-rows: auto;
+    /*grid-auto-flow: column;*/
+    height: 100%;
+    width: 100%;
     padding: 10px;
+
 }
-.container img{
+.screenShots{
+
     height: 270px;
-    width: 300px;
+    width: available;
 }
 #filtras{
     position: relative;
