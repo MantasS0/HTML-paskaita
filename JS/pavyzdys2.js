@@ -1,10 +1,24 @@
 let el = document.getElementById("elementas");
+let elPakeistas;
+var couter = 0;
 
 function pakeisti () {
-
-    el.style.color = "red";
-    el.style.backgroundColor = "blue";
-    el.style.fontSize = "24px";
+    if (couter == 0) {
+        el.style.display = "block";
+        el.style.width = "auto";
+        el.style.position = "relative";
+        el.style.textAlign = "center";
+        el.style.textTransform = "uppercase";
+        el.style.color = "red";
+        el.style.backgroundColor = "blue";
+        el.style.fontSize = "24px";
+        // el.style.overflow = "auto";
+        document.getElementById('foto').height = "200";
+        document.getElementById('foto').width = "400";
+        elPakeistas = document.getElementById("elementas");
+        counter = 1;} else {
+        // document.get
+    }
 }
 
 let pav = document.getElementById("foto");
@@ -18,41 +32,7 @@ while (x<255){
     el.fontSize = x + "px";
 }
 
-//mano variantas
-let lightOff = document.getElementById("light-off");
-let lightOn = document.getElementById("light-on");
-lightOff.src = "/img/lamp-off.png";
-lightOn.src = "/img/lamp-on.png";
-
-
-var lonh = lightOn.style.display = 'none';
-var lons = lightOn.style.display = 'contents';
-var loffh = lightOff.style.display = 'none';
-var loffs = lightOff.style.display = 'contents';
-
-
-function setImageVisible(id) {
-    var img = document.getElementById(id);
-    img.style.display = 'contents';
-}
-function setImageHidden(id) {
-    var img = document.getElementById(id);
-    img.style.display = 'none';
-}
-
-function jungtiIsjungti() {
-    if (lonh = true){
-        setImageVisible("light-off");
-        setImageHidden("light-on")
-    } else {
-        setImageVisible("light-on");
-        setImageHidden("light-off")
-    }
-
-}
-//veikia blogai (bandyt pagal destytojo tik su mygtuku
-
-//destytojo varinatas
+//lempute su JS.
 var state = false;
 function lempute() {
     if (state){
@@ -63,5 +43,4 @@ function lempute() {
     state = !state;
 }
 
-//jQuerry
 

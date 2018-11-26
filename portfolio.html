@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/dizainas.css">
     <link rel="stylesheet" href="css/filtras.css">
     <!--<link rel="stylesheet" href="css/animacijos.css">-->
+    <link rel="icon" href="/img/favicon.png">
+
 </head>
 <body>
 <header id="meniu">
@@ -29,49 +31,74 @@
             </h1>
         </header>
         <nav id="filtras">
-            <button class="btn active" onclick="filterSelection('all')"> All</button>
-            <button class="btn" onclick="filterSelection('cSharp')"> C#</button>
-            <button class="btn" onclick="filterSelection('java')"> Java</button>
-            <button class="btn" onclick="filterSelection('web')"> Web</button>
+            <a class="btn active" href="#all"> All</a>
+            <a class="btn" href="#cSharp"> C#</a>
+            <a class="btn" href="#java"> Java</a>
+            <a class="btn" href="#web"> Web</a>
+
+            <!--<div class="tabs">-->
+            <!--<a class="tab" href="#sheet1">Tab1</a>-->
+            <!--<a class="tab" href="#sheet2">Tab2</a>-->
+            <!--<a class="tab active" href="#sheet3">Tab3</a>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="sheets">-->
+            <!--<div class="sheet" id="sheet1">1</div>-->
+            <!--<div class="sheet" id="sheet2">2</div>-->
+            <!--<div class="sheet" id="sheet3">3</div>-->
+            <!--</div>-->
+
+
         </nav>
-        <div class="container">
-            <div class="filterDiv cSharp">
-                <img src="/img/c1.PNG" alt="C# pav. 1" height="270" width="300"/>
-                <img src="/img/c2.PNG" alt="C# pav. 2" height="270" width="300"/>
+        <div class="container" id="all">
+            <div class="filterDiv cSharp" id="cSharp">
+                <img src="/img/c1.PNG" alt="C# pav. 1" />
+                <img src="/img/c2.PNG" alt="C# pav. 2" />
             </div>
-            <div class="filterDiv java">
-                <img src="/img/java1.PNG" alt="JAVA pav. 1" height="270" width="300"/>
-                <img src="/img/java2.PNG" alt="JAVA pav. 2" height="270" width="300"/>
+            <div class="filterDiv java" id="java">
+                <img src="/img/java1.PNG" alt="JAVA pav. 1" />
+                <img src="/img/java2.PNG" alt="JAVA pav. 2" />
             </div>
-            <div class="filterDiv web">
-                <img src="/img/web1.PNG" alt="WEB pav. 1" height="270" width="300"/>
+            <div class="filterDiv web" id="web">
+                <img src="/img/web1.PNG" alt="WEB pav. 1" />
+                <div>
+                    <button id="button12" onclick="pakeisti()">Paspausti</button>
+                    <div id="elementas">
+                        testas
+                        <div>kitas</div>
+                        <img id="foto">
+                    </div>
+                </div>
+                <div>
+                    <img id="lemp2" src="/img/lamp-off.png" onclick="lempute()" width="200" height="300">
+                </div>
+
+                <div class="item1">
+                    <img src="/img/lamp-off.png"
+                         class="lempute false"
+                         width="200" height="300"
+                    >
+                </div>
+
+                <div class="testas">
+                    <input type="number" placeholder="A" id="A"/>
+                    <input type="number" placeholder="B" id="B"/>
+                    <input type="button" value="Sudeti" onclick="sudeti()"/>
+                    <input type="button" value="Atimti" onclick="atimti()"/>
+                    <input type="button" value="Dauginti" onclick="dauginti()"/>
+                    <input type="button" value="Dalinti" onclick="dalinti()"/>
+                    <h3 id="rezultatas">Ats.:</h3>
+                </div>
+                <div>
+                    <div class="display2">Cia yra klase0:</div>
+                    <div class="display2">Cia yra klase1:</div>
+                    <div class="display2">Cia yra klase2:</div>
+                </div>
             </div>
         </div>
-        <button id="button12" onclick="pakeisti()">Paspausti</button>
-        <div id="elementas">
-            testas
-            <div>kitas</div>
-            <img id="foto">
-        </div>
-
-        <button id="light-on-off" onclick="jungtiIsjungti()">ON/OFF</button>
-        <div class="lightbulb">
-
-            <img id="light-off">
 
 
-            <img id="light-on" style="display: none">
-
-
-        </div>
-        <img id="lemp2" src="/img/lamp-off.png" onclick="lempute()">
-
-        <div class = "item1">
-            <img src="/img/lamp-off.png"
-                 class = "lempute false"
-            >
-        </div>
-        <div class="pagination"><<1/2/3>></div>
+        <div class="pagination"><< 1 | 2 | 3 >></div>
 
     </div>
 </main>
@@ -88,6 +115,7 @@
     </nav>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/pavyzdys1.js"></script>
     <script src="JS/pavyzdys2.js"></script>
     <script src="JS/jQuerry.js"></script>
 

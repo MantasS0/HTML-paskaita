@@ -1,12 +1,32 @@
-.container {
-    overflow: hidden;
-    display: flex;
+.container *{
+    /*overflow: hidden;*/
+    /*display: flex;*/
     align-content: space-evenly;
+    /*margin: 20px 5px 5px;*/
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    /*height: 200px;*/
+    /*width: 100%;*/
+    padding: 10px;
 }
-
-#filtras button {
+.container img{
+    height: 270px;
+    width: 300px;
+}
+#filtras{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#filtras a {
     text-transform: uppercase;
     font-weight: bold;
+    border: solid 1px #010101;
+    /*background-color: #f1f1f1;*/
+    cursor: pointer;
+    padding: 9px 12px;
+    text-decoration: none;
 }
 
 .filterDiv img {
@@ -47,4 +67,9 @@
 .btn.active {
     background-color: #2196F3;
     color: white;
+}
+.pagination{
+    display: none;
+    text-align: center;
+
 }
